@@ -1,0 +1,32 @@
+{
+  "name": "rollbacker-policy",
+  "version": "0.1.0",
+  "dependencies": {},
+  "policy": {
+    "language": "coffeescript",
+    "params": {
+      "type": {
+        "type": "select",
+        "required": true,
+        "label": "Reversion type",
+        "tip": "Revert only this type of modifications.",
+        "options": {
+          "add": {
+            "label": "Additions"
+          },
+          "rem": {
+            "label": "Removals"
+          }
+        }
+      },
+      "allowRotate": {
+        "type": "checkbox",
+        "required": true,
+        "default": true,
+        "label": "Allow rotation",
+        "tip": "(Recommended for logs) don't revert rotation in case that the watched file is a log."
+      }
+    },
+    "defaultName": "Roll back"
+  }
+}
