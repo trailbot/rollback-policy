@@ -8,6 +8,7 @@
       "type": {
         "type": "select",
         "required": true,
+        "default": "rem",
         "label": "Reversion type",
         "tip": "Revert only this type of modifications.",
         "options": {
