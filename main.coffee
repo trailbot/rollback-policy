@@ -25,5 +25,7 @@ class Rollbacker
     if changeType is @type and (!isRotation or @allowRotate)
       console.log "Reverting change of type #{@type}"
       fs.writeFile @path, prev, 'utf8'
+    else
+      console.log "Harmless change of type #{@type}, ignoring"
 
 module.exports = Rollbacker
