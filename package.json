@@ -10,7 +10,7 @@
         "required": true,
         "default": "rem",
         "label": "Reversion type",
-        "tip": "Revert only this type of modifications.",
+        "tip": "Only this type of modifications will be reverted.",
         "options": {
           "add": {
             "label": "Additions"
@@ -25,7 +25,7 @@
         "required": true,
         "default": true,
         "label": "Allow rotation",
-        "tip": "(Recommended for logs) don't revert rotation in case that the watched file is a log."
+        "tip": "Don't revert file rotation (recommended for logfiles)."
       }
     },
     "defaultName": "Roll back"
