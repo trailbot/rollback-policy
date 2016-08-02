@@ -1,7 +1,7 @@
 'use strict'
 fs = require 'fs'
 
-class Rollbacker
+class Rollback
   constructor : (params) ->
     @path = params.path
     @type = params.type
@@ -28,4 +28,4 @@ class Rollbacker
     else
       console.log "Harmless change of type #{changeType}, ignoring"
 
-module.exports = Rollbacker
+module.exports = Rollback

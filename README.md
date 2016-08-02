@@ -1,4 +1,4 @@
-# Rollbacker Smart Policy for [Trailbot](https://trailbot.io)
+# Rollback Smart Policy for [Trailbot](https://trailbot.io)
 This [Trailbot Smart Policy](https://github.com/trailbot/client/wiki/Smart-Policies) rolls back modified files into their previous version.
 
 ## Use cases
@@ -16,4 +16,4 @@ This policy accepts the following parameters:
 | type | Revert only this type of modifications*  | 'Removal'        | :white_check_mark:|
 | allowRotate | Absolute path of the folder where you want to store the backup. | true        | :white_check_mark:|
 
-* In order to avoid crazy loops, you can set a rollbacker for addition or removal but never for both of them.
+* In order to avoid crazy loops, you can set a rollback for addition or removal but never for both of them.

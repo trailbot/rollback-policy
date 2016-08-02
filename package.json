@@ -1,6 +1,6 @@
 {
-  "name": "rollbacker-policy",
-  "version": "0.1.0",
+  "name": "rollback-policy",
+  "version": "0.1.1",
   "dependencies": {},
   "policy": {
     "language": "coffeescript",
