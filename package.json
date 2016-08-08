@@ -1,6 +1,6 @@
 {
   "name": "rollback-policy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "dependencies": {},
   "repository": "https://github.com/trailbot/rollback-policy",
   "license": "MIT",
@@ -14,12 +14,8 @@
         "label": "Reversion type",
         "tip": "Only this type of modifications will be reverted.",
         "options": {
-          "add": {
-            "label": "Additions"
-          },
-          "rem": {
-            "label": "Removals"
-          }
+          "add": "Additions",
+          "rem": "Removals"
         }
       },
       "allowRotate": {
