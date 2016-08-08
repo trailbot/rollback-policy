@@ -7,9 +7,9 @@ class Rollback
     @type = params.type
     @allowRotate = params.allowRotate
 
-  receiver : (changes, {prev}) =>
+  receiver : ({diff, prev}) =>
     # Check if change is addition, removal or mixed
-    changeType = changes.reduce (acc, change) ->
+    changeType = diff.reduce (acc, change) ->
       if change.type in ['add', 'rem']
         if acc
           if change.type isnt acc
@@ -19,7 +19,7 @@ class Rollback
       acc
     , null
     # Check if change is rotation
-    isRotation = changeType is 'rem' and changes.length is 1
+    isRotation = changeType is 'rem' and diff.length is 1
 
     # Only revert if change and rotation settings match
     if changeType is @type and (!isRotation or @allowRotate)
