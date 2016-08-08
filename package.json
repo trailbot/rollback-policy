@@ -2,6 +2,8 @@
   "name": "rollback-policy",
   "version": "0.1.1",
   "dependencies": {},
+  "repository": "https://github.com/trailbot/rollback-policy",
+  "license": "MIT",
   "policy": {
     "language": "coffeescript",
     "params": {
